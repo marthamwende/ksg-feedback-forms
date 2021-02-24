@@ -25,7 +25,7 @@ else if ($text == "1*1") {
     $response .= "Please Enter 1 to confirm \n";
 }
 else if ($text == "1*1*1") {
-    $response = " CON Were you pleased with the Training activities of KSG? \n";
+    $response = " CON Were you pleased with the Training activity of KSG? \n";
     $response .= "Enter 1 to mean YES \n";
     $response .= "Enter 0 to mean NO \n";
 }
