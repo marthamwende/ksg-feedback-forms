@@ -5,18 +5,19 @@ $serviceCode = $_POST["serviceCode"];
 $text = $_POST["text"];
 // This is the first menu screen
 if ($text == "" ) {
-    $response = "CON Hi welcome, I can help you with training feedback at KSG \n";
+    $response = "CON Hi, Welcome to The Kenya School of Government \n";
  $response .= "1. Enter 1 to continue";
 }
 // Menu for a user who selects '1' from the first menu
 // Will be brought to this second menu screen 
 else if ($text == "1") {
-    $response .= "CON Please select your area of interest in the below menu \n";
+    $response .= "CON Please select the area you'd like to give feedback on from the below menu \n";
     $response .= "1. Training \n";
     $response .= "2. Dining \n";
     $response .= "3. Accomodation \n";
-    $response .= "4. Library \n";
-    $response .= "5. Facilities \n";
+    $response .= "4. Conferencing \n";
+    $response .= "5. Library services \n";
+    $response .= "6. Security \n";
 }
 // Menu for a user who selects '1' from the second menu above
 // Will be brought to this third menu screen
@@ -25,11 +26,12 @@ else if ($text == "1*1") {
     $response .= "Please Enter 1 to confirm \n";
 }
 else if ($text == "1*1*1") {
-    $response = " CON Were you pleased with the Training activities of KSG? \n";
-    $response .= "Enter 1 to mean YES \n";
-    $response .= "Enter 0 to mean NO \n";
+    $response = " CON Which course are you currently undertaking/have you undertaken? \n";
+    $response .= "Enter 1 to type the name of the course \n";
+    $response .= "Enter 0 to EXIT \n";
 }
 else if ($text == "1*1*1*1") {
+    
     $response = "END Thank you, your response has been recorded";
 }
 else if ($text == "1*1*1*0") {
