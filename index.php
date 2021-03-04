@@ -6,8 +6,8 @@ $text = $_POST["text"];
 // This is the first menu screen
 if ($text == "" ) {
     $response = "CON Hi, Welcome to The Kenya School of Government \n";
- $response .= "1. Enter 1 to continue";
- $response .= "0. Enter 0 to exit";
+ $response .= "1. Enter 1 to continue \n";
+ $response .= "0. Enter 0 to exit \n";
 }
 // Menu for a user who selects '1' from the first menu
 // Will be brought to this second menu screen 
@@ -29,7 +29,9 @@ $response .= "END Thank you for visiting KSG \n";
 else if ($text == "1*1") {
     $response = "CON You are about to give feedback on Training \n";
     $response .= "Please Enter 1 to confirm \n";
+    $response .= "0. Enter 0 to exit \n";
 }
+//Menu for user who selects 1 to confirm training
 else if ($text == "1*1*1") {
     $response = " CON Please select the course you are currently undertaking / have undertaken \n";
     $response .= "1. Senior Management Course \n";
@@ -46,136 +48,218 @@ else if ($text == "1*1*1") {
     $response .= "00. Other \n";
     $response .= "Enter 000 to EXIT \n";
 }
-//Menu for user who selects course 1, proceeds to rate the facilitators
+// Menu for a user who selects '0' from the second menu, gets the below response
+else if ($text == "0") {
+    $response .= "END Thank you for visiting KSG \n";
+}
+//Menu for user who selects senior management course /////LOOP HERE LOOP HERE LOOP HERE
 else if ($text == "1*1*1*1") {
-    $response .= "CON On a scale of 1-5, how would you rate the facilitators? \n";
-    $response .= "1. Very poor \n";
-    $response .= "2. Poor \n";
-    $response .= "3. Good \n";
-    $response .= "4. Very good \n";
-    $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+        $response .= "CON On a scale of 1-5, how would you rate the facilitators? \n";
+        $response .= "1. Very poor \n";
+        $response .= "2. Poor \n";
+        $response .= "3. Good \n";
+        $response .= "4. Very good \n";
+        $response .= "5. Excellent \n";
+        $response .= "Enter 000 to EXIT \n";
 }
-//Menu for user who selects course 1 and rates the facilitators, proceeds to rate expectations
+else if ($text == "000 \n") {
+    $response .= "END Thank you for visiting KSG \n";
+}
+// Menu for a user who selects very poor on facilitators
 else if ($text == "1*1*1*1*1") {
-    $response .= "CON On a scale of 1-5, how would you rate us meeting your expectations on course content delivery? \n";
-    $response .= "1. Very poor \n";
-    $response .= "2. Poor \n";
-    $response .= "3. Good \n";
-    $response .= "4. Very good \n";
-    $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+       $response .= "CON On a scale of 1-5, how would you rate us meeting your expectations on course content delivery? \n";
+        $response .= "1. Very poor \n";
+        $response .= "2. Poor \n";
+        $response .= "3. Good \n";
+        $response .= "4. Very good \n";
+        $response .= "5. Excellent \n";
+        $response .= "Enter 000 to EXIT \n";
 }
-//Menu for user who selects course 1, rates the facilitators and rates expectations, proceeds to rate the facilities
+else if ($text == "000 \n") {
+        $response .= "END Thank you for visiting KSG \n";
+}
+// Menu for user who selects 1 'very poor' on expectation
 else if ($text == "1*1*1*1*1*1") {
-    $response .= "CON On a scale of 1-5, how would you rate the facilities (lecture venues, projectors, stationeries e.t.c)? \n";
-    $response .= "1. Very poor \n";
-    $response .= "2. Poor \n";
-    $response .= "3. Good \n";
-    $response .= "4. Very good \n";
-    $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+        $response .= "CON On a scale of 1-5, how would you rate the facilities (lecture venues, projectors, stationeries e.t.c)? \n";
+        $response .= "1. Very poor \n";
+        $response .= "2. Poor \n";
+        $response .= "3. Good \n";
+        $response .= "4. Very good \n";
+        $response .= "5. Excellent \n";
+        $response .= "Enter 000 to EXIT \n";   
 }
-//For the user who selects course 1, rates the facilitators, rates expectations and rates the facilities...is considered end of survey and 
+else if ($text == "000 \n") {
+    $response .= "END Thank you for visiting KSG \n";
+}
+//Menu for user who selects 1 'very poor' on Facilities
 else if ($text == "1*1*1*1*1*1*1") {
-    $response .= "END Thank you for your feedback. \n";
+    $response .= "END Thank you for your feedback \n";
 }
-//Menu for user who selects course 1 and rates the facilitators, proceeds to rate expectations
-else if ($text == "1*1*1*1*2") {
-    $response .= "CON On a scale of 1-5, how would you rate us meeting your expectations on course content delivery? \n";
-    $response .= "1. Very poor \n";
-    $response .= "2. Poor \n";
-    $response .= "3. Good \n";
-    $response .= "4. Very good \n";
-    $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+//Menu for user who selects 2 'poor' on Facilities
+else if ($text == "1*1*1*1*1*1*2") {
+    $response .= "END Thank you for your feedback \n";
 }
-//Menu for user who selects course 1, rates the facilitators and rates expectations, proceeds to rate the facilities
-else if ($text == "1*1*1*1*2*1") {
+//Menu for user who selects 3 'good' on Facilities
+else if ($text == "1*1*1*1*1*1*3") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 4 'very good' on Facilities
+else if ($text == "1*1*1*1*1*1*4") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 5 'excellent' on Facilities
+else if ($text == "1*1*1*1*1*1*5") {
+    $response .= "END Thank you for your feedback \n";
+}
+else if ($text == "000 \n") {
+    $response .= "END Thank you for visiting KSG \n";
+}
+// Menu for user who selects 2 'poor' on expectation
+else if ($text == "1*1*1*1*1*2") {
     $response .= "CON On a scale of 1-5, how would you rate the facilities (lecture venues, projectors, stationeries e.t.c)? \n";
     $response .= "1. Very poor \n";
     $response .= "2. Poor \n";
     $response .= "3. Good \n";
     $response .= "4. Very good \n";
     $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+    $response .= "Enter 000 to EXIT \n";   
 }
-//For the user who selects course 1, rates the facilitators, rates expectations and rates the facilities...is considered end of survey and 
+else if ($text == "000 \n") {
+$response .= "END Thank you for visiting KSG \n";
+}
+//Menu for user who selects 1 'very poor' on Facilities
 else if ($text == "1*1*1*1*1*2*1") {
-    $response .= "END Thank you for your feedback. \n";
+    $response .= "END Thank you for your feedback \n";
 }
-//Menu for user who selects course 1 and rates the facilitators, proceeds to rate expectations
-else if ($text == "1*1*1*1*3") {
-    $response .= "CON On a scale of 1-5, how would you rate us meeting your expectations on course content delivery? \n";
-    $response .= "1. Very poor \n";
-    $response .= "2. Poor \n";
-    $response .= "3. Good \n";
-    $response .= "4. Very good \n";
-    $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+//Menu for user who selects 2 'poor' on Facilities
+else if ($text == "1*1*1*1*1*2*2") {
+    $response .= "END Thank you for your feedback \n";
 }
-//Menu for user who selects course 1, rates the facilitators and rates expectations, proceeds to rate the facilities
-else if ($text == "1*1*1*1*3*1") {
+//Menu for user who selects 3 'good' on Facilities
+else if ($text == "1*1*1*1*1*2*3") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 4 'very good' on Facilities
+else if ($text == "1*1*1*1*1*2*4") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 5 'excellent' on Facilities
+else if ($text == "1*1*1*1*1*2*5") {
+    $response .= "END Thank you for your feedback \n";
+}
+else if ($text == "000 \n") {
+    $response .= "END Thank you for visiting KSG \n";
+}
+// Menu for user who selects 3 'good' on expectation
+else if ($text == "1*1*1*1*1*3") {
     $response .= "CON On a scale of 1-5, how would you rate the facilities (lecture venues, projectors, stationeries e.t.c)? \n";
     $response .= "1. Very poor \n";
     $response .= "2. Poor \n";
     $response .= "3. Good \n";
     $response .= "4. Very good \n";
     $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+    $response .= "Enter 000 to EXIT \n";   
 }
-//For the user who selects course 1, rates the facilitators, rates expectations and rates the facilities...is considered end of survey and 
-else if ($text == "1*1*1*1*3*1*1") {
-    $response .= "END Thank you for your feedback. \n";
+else if ($text == "000 \n") {
+$response .= "END Thank you for visiting KSG \n";
 }
-//Menu for user who selects course 1 and rates the facilitators, proceeds to rate expectations
-else if ($text == "1*1*1*1*4") {
-    $response .= "CON On a scale of 1-5, how would you rate us meeting your expectations on course content delivery? \n";
-    $response .= "1. Very poor \n";
-    $response .= "2. Poor \n";
-    $response .= "3. Good \n";
-    $response .= "4. Very good \n";
-    $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+//Menu for user who selects 1 'very poor' on Facilities
+else if ($text == "1*1*1*1*1*3*1") {
+    $response .= "END Thank you for your feedback \n";
 }
-//Menu for user who selects course 1, rates the facilitators and rates expectations, proceeds to rate the facilities
-else if ($text == "1*1*1*1*4*1") {
+//Menu for user who selects 2 'poor' on Facilities
+else if ($text == "1*1*1*1*1*3*2") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 3 'good' on Facilities
+else if ($text == "1*1*1*1*1*3*3") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 4 'very good' on Facilities
+else if ($text == "1*1*1*1*1*3*4") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 5 'excellent' on Facilities
+else if ($text == "1*1*1*1*1*3*5") {
+    $response .= "END Thank you for your feedback \n";
+}
+else if ($text == "000 \n") {
+    $response .= "END Thank you for visiting KSG \n";
+}
+// Menu for user who selects 4 'very good' on expectation
+else if ($text == "1*1*1*1*1*4") {
     $response .= "CON On a scale of 1-5, how would you rate the facilities (lecture venues, projectors, stationeries e.t.c)? \n";
     $response .= "1. Very poor \n";
     $response .= "2. Poor \n";
     $response .= "3. Good \n";
     $response .= "4. Very good \n";
     $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+    $response .= "Enter 000 to EXIT \n";   
 }
-//For the user who selects course 1, rates the facilitators, rates expectations and rates the facilities...is considered end of survey and 
-else if ($text == "1*1*1*1*4*1*1") {
-    $response .= "END Thank you for your feedback. \n";
+else if ($text == "000 \n") {
+$response .= "END Thank you for visiting KSG \n";
 }
-//Menu for user who selects course 1 and rates the facilitators, proceeds to rate expectations
-else if ($text == "1*1*1*1*5") {
-    $response .= "CON On a scale of 1-5, how would you rate us meeting your expectations on course content delivery? \n";
-    $response .= "1. Very poor \n";
-    $response .= "2. Poor \n";
-    $response .= "3. Good \n";
-    $response .= "4. Very good \n";
-    $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+//Menu for user who selects 1 'very poor' on Facilities
+else if ($text == "1*1*1*1*1*4*1") {
+    $response .= "END Thank you for your feedback \n";
 }
-//Menu for user who selects course 1, rates the facilitators and rates expectations, proceeds to rate the facilities
-else if ($text == "1*1*1*1*5*1") {
+//Menu for user who selects 2 'poor' on Facilities
+else if ($text == "1*1*1*1*1*4*2") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 3 'good' on Facilities
+else if ($text == "1*1*1*1*1*4*3") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 4 'very good' on Facilities
+else if ($text == "1*1*1*1*1*4*4") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 5 'excellent' on Facilities
+else if ($text == "1*1*1*1*1*4*5") {
+    $response .= "END Thank you for your feedback \n";
+}
+else if ($text == "000 \n") {
+    $response .= "END Thank you for visiting KSG \n";
+}
+// Menu for user who selects 5 'excellent' on expectation
+else if ($text == "1*1*1*1*1*5") {
     $response .= "CON On a scale of 1-5, how would you rate the facilities (lecture venues, projectors, stationeries e.t.c)? \n";
     $response .= "1. Very poor \n";
     $response .= "2. Poor \n";
     $response .= "3. Good \n";
     $response .= "4. Very good \n";
     $response .= "5. Excellent \n";
-    $response .= "Enter 000 to EXIT \n";
+    $response .= "Enter 000 to EXIT \n";   
 }
-//For the user who selects course 1, rates the facilitators, rates expectations and rates the facilities...is considered end of survey and 
-else if ($text == "1*1*1*1*5*1*1") {
-    $response .= "END Thank you for your feedback. \n";
+else if ($text == "000 \n") {
+$response .= "END Thank you for visiting KSG \n";
 }
+//Menu for user who selects 1 'very poor' on Facilities
+else if ($text == "1*1*1*1*1*5*1") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 2 'poor' on Facilities
+else if ($text == "1*1*1*1*1*5*2") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 3 'good' on Facilities
+else if ($text == "1*1*1*1*1*5*3") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 4 'very good' on Facilities
+else if ($text == "1*1*1*1*1*5*4") {
+    $response .= "END Thank you for your feedback \n";
+}
+//Menu for user who selects 5 'excellent' on Facilities
+else if ($text == "1*1*1*1*1*5*5") {
+    $response .= "END Thank you for your feedback \n";
+}
+else if ($text == "000 \n") {
+    $response .= "END Thank you for visiting KSG \n";
+}
+/////////LOOP HERE 
+
 // Menu for a user who selects "2" from the second menu above
 // Will be brought to this fourth menu screen
 else if ($text == "1*2") {
