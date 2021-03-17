@@ -21,7 +21,7 @@ if ($text == "" ) {
 // Menu for a user who selects '000' from the first menu, gets the below response
 else if ($text == "000") {
 $response .= "END Thank you for visiting The Kenya School of Government. ";
-$response .= "END You have successfully logged out. \n";
+$response .= "You have successfully logged out. \n";
 }
 
 // Menu for a user who selects '1' from the second menu above
