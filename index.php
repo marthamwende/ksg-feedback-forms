@@ -6,7 +6,7 @@ $text = $_POST["text"];
 // This is the first menu screen
 if ($text == "" ) {
     $response = "CON Hi, Welcome to The Kenya School of Government \n";
-    $response .= "CON Please select the area you'd like to give feedback on \n";
+    $response .= "Please select the area you'd like to give feedback on \n";
     $response .= "1. Training \n";
     $response .= "2. Dining \n";
     $response .= "3. Accomodation \n";
