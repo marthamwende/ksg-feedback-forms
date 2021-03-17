@@ -6,12 +6,6 @@ $text = $_POST["text"];
 // This is the first menu screen
 if ($text == "" ) {
     $response = "CON Hi, Welcome to The Kenya School of Government \n";
- $response .= "1. Enter 1 to continue \n";
- $response .= "0. Enter 0 to exit \n";
-}
-// Menu for a user who selects '1' from the first menu
-// Will be brought to this second menu screen 
-else if ($text == "1") {
     $response .= "CON Please select the area you'd like to give feedback on \n";
     $response .= "1. Training \n";
     $response .= "2. Dining \n";
@@ -19,11 +13,17 @@ else if ($text == "1") {
     $response .= "4. Conferencing \n";
     $response .= "5. Library services \n";
     $response .= "6. Security \n";
+    $response .= "0. Back \n";
+
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
 }
-// Menu for a user who selects '0' from the first menu, gets the below response
-else if ($text == "0") {
-$response .= "END Thank you for visiting KSG \n";
+// Menu for a user who selects '000' from the first menu, gets the below response
+else if ($text == "000") {
+$response .= "END Thank you for visiting The Kenya School of Government. ";
+$response .= "END You have successfully logged out. \n";
 }
+
 // Menu for a user who selects '1' from the second menu above
 // Will be brought to this third menu screen
 else if ($text == "1*1") {
