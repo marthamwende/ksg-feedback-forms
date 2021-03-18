@@ -4,6 +4,8 @@ $sessionId = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $text = $_POST["text"];
 // THIS IS THE MAIN MENU
+///TRAINING FEEDBBACK SECTION
+
 // This is the first menu screen
 if ($text == "" ) {
     $response = "CON Hi, Welcome to The Kenya School of Government. \n";
@@ -4128,6 +4130,9 @@ else if ($text == "000") {
  $response .= "END Thank you for visiting The Kenya School of Government. \n";
  $response .= "You have successfully logged out. \n";
 }
+
+/// END OF TRAINING FEEDBACK SECTION
+
 /////////MENU FOR COURSE '2' SLDP 
 //////LOOP FOR ALL COURSES 1*2, 1*3.....1*40
 // echo response
