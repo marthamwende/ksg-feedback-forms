@@ -4130,8 +4130,6 @@ else if ($text == "000") {
 }
 /////////MENU FOR COURSE '2' SLDP 
 //////LOOP FOR ALL COURSES 1*2, 1*3.....1*40
-
-
 // echo response
 header('Content-type: text/plain');
 echo $response
