@@ -20,7 +20,22 @@ if ($text == "" ) {
     $response .= "00. Main Menu \n";
     $response .= "000. End Session \n";
 }
-else if ($text == "0,00" ) {
+// Menu for a user who selects '0' from the MAIN MENU, gets the below response
+else if ($text == "0") {
+    $response = "CON Hi, Welcome to The Kenya School of Government. \n";
+    $response .= "Please select the area you'd like to give feedback on \n";
+    $response .= "1. Training \n";
+    $response .= "2. Dining \n";
+    $response .= "3. Accomodation \n";
+    $response .= "4. Conferencing \n";
+    $response .= "5. Library services \n";
+    $response .= "6. Security \n";
+    $response .= "0. Back \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+// Menu for a user who selects '00' from the MAIN MENU, gets the below response
+else if ($text == "00") {
     $response = "CON Hi, Welcome to The Kenya School of Government. \n";
     $response .= "Please select the area you'd like to give feedback on \n";
     $response .= "1. Training \n";
