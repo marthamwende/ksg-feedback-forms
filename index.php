@@ -1091,7 +1091,7 @@ if ($text == "2"){
 }
 //IN THE CASE WHERE USER TEXT IS '2, 1,'
 else if ($text == "2*1"){
-    $response .= "On a scale of 1-5, how would you rate the hospitality team? /n";
+    $response .= "On a scale of 1-5, how would you rate the hospitality team? \n";
     $response .= "1. Very poor \n"; 
     $response .= "2. Poor  \n"; 
     $response .= "3. Satisfactory\n"; 
@@ -1253,7 +1253,7 @@ else if ($text == "2*1*1*4*5") {
 ///BACK TO THE MEALS SERVED RATING
 //IN THE CASE WHERE USER TEXT IS '2, 1, 1, 5' DINING, MAANDALIZI, VERY POOR,EXCELLENT
 else if ($text == "2*1*1*5"){
-    $response .= "On a scale of 1-5, how would you rate the dining facility? /n";
+    $response .= "On a scale of 1-5, how would you rate the dining facility? \n";
     $response .= "1. Very poor \n"; 
     $response .= "2. Poor  \n"; 
     $response .= "3. Satisfactory\n"; 
@@ -1301,7 +1301,7 @@ else if ($text == "2*1*2"){
 }
 //IN THE CASE WHERE USER TEXT IS '2, 1, 2, 1' DINING, MAANDALIZI, POOR, VERY POOR
 else if ($text == "2*1*2*1"){
-    $response .= "On a scale of 1-5, how would you rate the dining facility? /n";
+    $response .= "On a scale of 1-5, how would you rate the dining facility? \n";
     $response .= "1. Very poor \n"; 
     $response .= "2. Poor  \n"; 
     $response .= "3. Satisfactory\n"; 
@@ -1403,7 +1403,7 @@ else if ($text == "2*1*2*3*5") {
 ///BACK TO THE MEALS SERVED RATING
 //IN THE CASE WHERE USER TEXT IS '2, 1, 2, 4' DINING, MAANDALIZI, POOR,VERY GOOD
 else if ($text == "2*1*2*4"){
-    $response .= "On a scale of 1-5, how would you rate the dining facility? /n";
+    $response .= "On a scale of 1-5, how would you rate the dining facility? \n";
     $response .= "1. Very poor \n"; 
     $response .= "2. Poor  \n"; 
     $response .= "3. Satisfactory\n"; 
