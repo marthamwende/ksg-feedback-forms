@@ -2025,10 +2025,939 @@ else if ($text == "2*1*5*5*5") {
 ///BEGINNING OF THE OTHER DINING AREA
 /////////MENU FOR DINING AREA '2' MARGARET KOBIA
 //////LOOP FOR ALL DINING AREAS 2*2
+//ACCOMODATION
+//IN THE CASE WHERE USER TEXT IS '3' ACCOMODATION, OUTPUT should be as follows
+if ($text == "3") {
+    $response .= "CON You are about to give feedback on Accomodation \n";
+    $response .= "Please select the accomodation venue allocated to you \n";
+    $response .= "1. Gateere \n";
+    $response .= "2. Mekatilili \n";
+    $response .= "3. Sawe \n";
+    $response .= "4. Wamalwa \n";
+    $response .= "5. Margaret Kobia \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1,' ACCOMODATION, GATEERE
+else if ($text == "3*1") {
+    $response .= "CON On a scale of 1-5, how would you rate the hospitality team? \n";
+    $response .= "1. Very poor \n"; 
+    $response .= "2. Poor  \n"; 
+    $response .= "3. Satisfactory\n"; 
+    $response .= "4. Very good \n"; 
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 1' ACCOMODATION, GATEERE, VERY POOR
+else if ($text == "3*1*1"){
+    $response .= "CON On a scale of 1-5, how would you rate the room services? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 1' ACCOMODATION, GATEERE, VERY POOR, VERY POOR
+else if ($text == "3*1*1*1"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 1, 1' ACCOMODATION, GATEERE, VERY POOR, VERY POOR, VERY POOR
+else if ($text == "3*1*1*1*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 1, 2' ACCOMODATION, GATEERE, VERY POOR, VERY POOR, POOR
+else if ($text == "3*1*1*1*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 1, 3' ACCOMODATION, GATEERE, VERY POOR, VERY POOR, SATISFACTORY
+else if ($text == "3*1*1*1*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 1, 4' ACCOMODATION, GATEERE, VERY POOR, VERY POOR, VERY GOOD
+else if ($text == "3*1*1*1*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 1, 5' ACCOMODATION, GATEERE, VERY POOR, VERY POOR, EXCELLENT
+else if ($text == "3*1*1*1*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 2' ACCOMODATION, GATEERE, VERY POOR, POOR
+else if ($text == "3*1*1*2"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 2, 1' ACCOMODATION, GATEERE, VERY POOR, POOR, VERY POOR
+else if ($text == "3*1*1*2*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 2, 2' ACCOMODATION, GATEERE, VERY POOR, POOR, POOR
+else if ($text == "3*1*1*2*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 2, 3' ACCOMODATION, GATEERE, VERY POOR, POOR, SATISFACTORY
+else if ($text == "3*1*1*2*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 2, 4' ACCOMODATION, GATEERE, VERY POOR, POOR, VERY GOOD
+else if ($text == "3*1*1*2*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 2, 5' ACCOMODATION, GATEERE, VERY POOR, POOR, EXCELLENT
+else if ($text == "3*1*1*2*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+  //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 3' ACCOMODATION, GATEERE, VERY POOR, SATISFACTORY
+else if ($text == "3*1*1*3"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 3, 1' ACCOMODATION, GATEERE, VERY POOR, SATISFACTORY, VERY POOR
+else if ($text == "3*1*1*3*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 3, 2' ACCOMODATION, GATEERE, VERY POOR,  SATISFACTORY, POOR
+else if ($text == "3*1*1*3*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 3, 3' ACCOMODATION, GATEERE, VERY POOR,  SATISFACTORY, SATISFACTORY
+else if ($text == "3*1*1*3*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 3, 4' ACCOMODATION, GATEERE, VERY POOR, SATISFACTORY, VERY GOOD
+else if ($text == "3*1*1*3*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 3, 5' ACCOMODATION, GATEERE, VERY POOR,  SATISFACTORY, EXCELLENT
+else if ($text == "3*1*1*3*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+//IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 4' ACCOMODATION, GATEERE, VERY POOR, VERY GOOD
+else if ($text == "3*1*1*4"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 4, 1' ACCOMODATION, GATEERE, VERY POOR, VERY GOOD, VERY POOR
+else if ($text == "3*1*1*4*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 4, 2' ACCOMODATION, GATEERE, VERY POOR,  VERY GOOD, POOR
+else if ($text == "3*1*1*4*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 4, 3' ACCOMODATION, GATEERE, VERY POOR,  VERY GOOD, SATISFACTORY
+else if ($text == "3*1*1*4*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 4, 4' ACCOMODATION, GATEERE, VERY POOR, VERY GOOD, VERY GOOD
+else if ($text == "3*1*1*4*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 4, 5' ACCOMODATION, GATEERE, VERY POOR,  VERY GOOD, EXCELLENT
+else if ($text == "3*1*1*4*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 5' ACCOMODATION, GATEERE, VERY POOR, EXCELLENT
+else if ($text == "3*1*1*5"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 5, 1' ACCOMODATION, GATEERE, VERY POOR, EXCELLENT, VERY POOR
+else if ($text == "3*1*1*5*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 5, 2' ACCOMODATION, GATEERE, VERY POOR, EXCELLENT, POOR
+else if ($text == "3*1*1*5*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 5, 3' ACCOMODATION, GATEERE, VERY POOR,  EXCELLENT, SATISFACTORY
+else if ($text == "3*1*1*5*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 5, 4' ACCOMODATION, GATEERE, VERY POOR, EXCELLENT, VERY GOOD
+else if ($text == "3*1*1*5*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 1 , 5, 5' ACCOMODATION, GATEERE, VERY POOR, EXCELLENT, EXCELLENT
+else if ($text == "3*1*1*5*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //BACK TO THE HOSPITALITY TEAM RATING RESPONSES
+//IN THE CASE WHERE USER TEXT IS '3, 1, 2' ACCOMODATION, GATEERE, POOR
+else if ($text == "3*1*2"){
+    $response .= "CON On a scale of 1-5, how would you rate the room services? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 1' ACCOMODATION, GATEERE, POOR, VERY POOR
+else if ($text == "3*1*2*1"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 1, 1' ACCOMODATION, GATEERE, POOR, VERY POOR, VERY POOR
+else if ($text == "3*1*2*1*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 1, 2' ACCOMODATION, GATEERE, POOR, VERY POOR, POOR
+else if ($text == "3*1*2*1*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 1, 3' ACCOMODATION, GATEERE, POOR, VERY POOR, SATISFACTORY
+else if ($text == "3*1*2*1*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 1, 4' ACCOMODATION, GATEERE, POOR, VERY POOR, VERY GOOD
+else if ($text == "3*1*2*1*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 1, 5' ACCOMODATION, GATEERE, POOR, VERY POOR, EXCELLENT
+else if ($text == "3*1*2*1*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 2' ACCOMODATION, GATEERE, POOR, POOR
+else if ($text == "3*1*2*2"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 2, 1' ACCOMODATION, GATEERE, POOR, POOR, VERY POOR
+else if ($text == "3*1*2*2*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 2, 2' ACCOMODATION, GATEERE, POOR, POOR, POOR
+else if ($text == "3*1*2*2*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 2, 3' ACCOMODATION, GATEERE, POOR, POOR, SATISFACTORY
+else if ($text == "3*1*2*2*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 2, 4' ACCOMODATION, GATEERE, POOR, POOR, VERY GOOD
+else if ($text == "3*1*2*2*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 2, 5' ACCOMODATION, GATEERE, POOR, POOR, EXCELLENT
+else if ($text == "3*1*2*2*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+  //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 3' ACCOMODATION, GATEERE, POOR, SATISFACTORY
+else if ($text == "3*1*2*3"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 3, 1' ACCOMODATION, GATEERE, POOR, SATISFACTORY, VERY POOR
+else if ($text == "3*1*2*3*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 3, 2' ACCOMODATION, GATEERE, POOR,  SATISFACTORY, POOR
+else if ($text == "3*1*2*3*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 3, 3' ACCOMODATION, GATEERE, POOR,  SATISFACTORY, SATISFACTORY
+else if ($text == "3*1*2*3*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 3, 4' ACCOMODATION, GATEERE, POOR, SATISFACTORY, VERY GOOD
+else if ($text == "3*1*2*3*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 3, 5' ACCOMODATION, GATEERE, POOR,  SATISFACTORY, EXCELLENT
+else if ($text == "3*1*2*3*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+//IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 4' ACCOMODATION, GATEERE, POOR, VERY GOOD
+else if ($text == "3*1*2*4"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 4, 1' ACCOMODATION, GATEERE, POOR, VERY GOOD, VERY POOR
+else if ($text == "3*1*2*4*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 4, 2' ACCOMODATION, GATEERE, POOR,  VERY GOOD, POOR
+else if ($text == "3*1*2*4*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 4, 3' ACCOMODATION, GATEERE, POOR,  VERY GOOD, SATISFACTORY
+else if ($text == "3*1*2*4*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 4, 4' ACCOMODATION, GATEERE, POOR, VERY GOOD, VERY GOOD
+else if ($text == "3*1*2*4*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 4, 5' ACCOMODATION, GATEERE, POOR,  VERY GOOD, EXCELLENT
+else if ($text == "3*1*2*4*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 5' ACCOMODATION, GATEERE, POOR, EXCELLENT
+else if ($text == "3*1*2*5"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 5, 1' ACCOMODATION, GATEERE, POOR, EXCELLENT, VERY POOR
+else if ($text == "3*1*2*5*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 5, 2' ACCOMODATION, GATEERE, POOR, EXCELLENT, POOR
+else if ($text == "3*1*2*5*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 5, 3' ACCOMODATION, GATEERE, POOR,  EXCELLENT, SATISFACTORY
+else if ($text == "3*1*2*5*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 5, 4' ACCOMODATION, GATEERE, POOR, EXCELLENT, VERY GOOD
+else if ($text == "3*1*2*5*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 2 , 5, 5' ACCOMODATION, GATEERE, POOR, EXCELLENT, EXCELLENT
+else if ($text == "3*1*2*5*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //BACK TO THE HOSPITALITY TEAM RATING RESPONSES
+//IN THE CASE WHERE USER TEXT IS '3, 1, 3' ACCOMODATION, GATEERE, SATISFACTORY
+else if ($text == "3*1*3"){
+    $response .= "CON On a scale of 1-5, how would you rate the room services? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 1' ACCOMODATION, GATEERE, SATISFACTORY, VERY POOR
+else if ($text == "3*1*3*1"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 1, 1' ACCOMODATION, GATEERE, SATISFACTORY, VERY POOR, VERY POOR
+else if ($text == "3*1*3*1*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 1, 2' ACCOMODATION, GATEERE, SATISFACTORY, VERY POOR, POOR
+else if ($text == "3*1*3*1*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 1, 3' ACCOMODATION, GATEERE, SATISFACTORY, VERY POOR, SATISFACTORY
+else if ($text == "3*1*3*1*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 1, 4' ACCOMODATION, GATEERE,SATISFACTORY, VERY POOR, VERY GOOD
+else if ($text == "3*1*3*1*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 1, 5' ACCOMODATION, GATEERE, SATISFACTORY, VERY POOR, EXCELLENT
+else if ($text == "3*1*3*1*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 2' ACCOMODATION, GATEERE, SATISFACTORY, POOR
+else if ($text == "3*1*3*2"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 2, 1' ACCOMODATION, GATEERE, SATISFACTORY, POOR, VERY POOR
+else if ($text == "3*1*3*2*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 2, 2' ACCOMODATION, GATEERE, SATISFACTORY, POOR, POOR
+else if ($text == "3*1*3*2*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 2, 3' ACCOMODATION, GATEERE, SATISFACTORY, POOR, SATISFACTORY
+else if ($text == "3*1*3*2*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 2, 4' ACCOMODATION, GATEERE, SATISFACTORY, POOR, VERY GOOD
+else if ($text == "3*1*3*2*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 2, 5' ACCOMODATION, GATEERE, SATISFACTORY, POOR, EXCELLENT
+else if ($text == "3*1*3*2*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+  //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 3' ACCOMODATION, GATEERE, SATISFACTORY, SATISFACTORY
+else if ($text == "3*1*3*3"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 3, 1' ACCOMODATION, GATEERE,SATISFACTORY, SATISFACTORY, VERY POOR
+else if ($text == "3*1*3*3*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 3, 2' ACCOMODATION, GATEERE, SATISFACTORY,  SATISFACTORY, POOR
+else if ($text == "3*1*3*3*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 3, 3' ACCOMODATION, GATEERE, SATISFACTORY,  SATISFACTORY, SATISFACTORY
+else if ($text == "3*1*3*3*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 3, 4' ACCOMODATION, GATEERE, SATISFACTORY, SATISFACTORY, VERY GOOD
+else if ($text == "3*1*3*3*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 3, 5' ACCOMODATION, GATEERE,SATISFACTORY,  SATISFACTORY, EXCELLENT
+else if ($text == "3*1*3*3*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+//IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 4' ACCOMODATION, GATEERE, SATISFACTORY, VERY GOOD
+else if ($text == "3*1*3*4"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 4, 1' ACCOMODATION, GATEERE, SATISFACTORY, VERY GOOD, VERY POOR
+else if ($text == "3*1*3*4*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 4, 2' ACCOMODATION, GATEERE,SATISFACTORY,  VERY GOOD, POOR
+else if ($text == "3*1*3*4*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 4, 3' ACCOMODATION, GATEERE, SATISFACTORY,  VERY GOOD, SATISFACTORY
+else if ($text == "3*1*3*4*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 4, 4' ACCOMODATION, GATEERE, SATISFACTORY, VERY GOOD, VERY GOOD
+else if ($text == "3*1*3*4*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 4, 5' ACCOMODATION, GATEERE,SATISFACTORY,  VERY GOOD, EXCELLENT
+else if ($text == "3*1*3*4*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 5' ACCOMODATION, GATEERE, SATISFACTORY, EXCELLENT
+else if ($text == "3*1*3*5"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 5, 1' ACCOMODATION, GATEERE, SATISFACTORY, EXCELLENT, VERY POOR
+else if ($text == "3*1*3*5*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 5, 2' ACCOMODATION, GATEERE, SATISFACTORY, EXCELLENT, POOR
+else if ($text == "3*1*3*5*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 5, 3' ACCOMODATION, GATEERE, SATISFACTORY,  EXCELLENT, SATISFACTORY
+else if ($text == "3*1*3*5*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 3 , 5, 4' ACCOMODATION, GATEERE, SATISFACTORY, EXCELLENT, VERY GOOD
+else if ($text == "3*1*3*5*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 3, 5, 5' ACCOMODATION, GATEERE, SATISFACTORY, EXCELLENT, EXCELLENT
+else if ($text == "3*1*3*5*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //BACK TO THE HOSPITALITY TEAM RATING RESPONSES
+//IN THE CASE WHERE USER TEXT IS '3, 1, 4' ACCOMODATION, GATEERE, VERY GOOD
+else if ($text == "3*1*4"){
+    $response .= "CON On a scale of 1-5, how would you rate the room services? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 1' ACCOMODATION, GATEERE, VERY GOOD, VERY POOR
+else if ($text == "3*1*4*1"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 1, 1' ACCOMODATION, GATEERE, VERY GOOD, VERY POOR, VERY POOR
+else if ($text == "3*1*4*1*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 1, 2' ACCOMODATION, GATEERE, VERY GOOD, VERY POOR, POOR
+else if ($text == "3*1*4*1*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 1, 3' ACCOMODATION, GATEERE, VERY GOOD, VERY POOR, SATISFACTORY
+else if ($text == "3*1*4*1*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 1, 4' ACCOMODATION, GATEERE,VERY GOOD, VERY POOR, VERY GOOD
+else if ($text == "3*1*4*1*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 1, 5' ACCOMODATION, GATEERE, VERY GOOD, VERY POOR, EXCELLENT
+else if ($text == "3*1*4*1*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 2' ACCOMODATION, GATEERE, VERY GOOD, POOR
+else if ($text == "3*1*4*2"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 2, 1' ACCOMODATION, GATEERE, VERY GOOD, POOR, VERY POOR
+else if ($text == "3*1*4*2*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 2, 2' ACCOMODATION, GATEERE, VERY GOOD, POOR, POOR
+else if ($text == "3*1*4*2*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 2, 3' ACCOMODATION, GATEERE, VERY GOOD, POOR, SATISFACTORY
+else if ($text == "3*1*4*2*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 2, 4' ACCOMODATION, GATEERE, VERY GOOD, POOR, VERY GOOD
+else if ($text == "3*1*4*2*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 2, 5' ACCOMODATION, GATEERE, VERY GOOD, POOR, EXCELLENT
+else if ($text == "3*1*4*2*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+  //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 3' ACCOMODATION, GATEERE, VERY GOOD, SATISFACTORY
+else if ($text == "3*1*4*3"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 3, 1' ACCOMODATION, GATEERE,VERY GOOD, SATISFACTORY, VERY POOR
+else if ($text == "3*1*4*3*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 3, 2' ACCOMODATION, GATEERE, VERY GOOD,  SATISFACTORY, POOR
+else if ($text == "3*1*4*3*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 3, 3' ACCOMODATION, GATEERE, VERY GOOD,  SATISFACTORY, SATISFACTORY
+else if ($text == "3*1*4*3*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 3, 4' ACCOMODATION, GATEERE, VERY GOOD, SATISFACTORY, VERY GOOD
+else if ($text == "3*1*4*3*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 3, 5' ACCOMODATION, GATEERE,VERY GOOD,  SATISFACTORY, EXCELLENT
+else if ($text == "3*1*4*3*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+//IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 4' ACCOMODATION, GATEERE, VERY GOOD, VERY GOOD
+else if ($text == "3*1*4*4"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 4, 1' ACCOMODATION, GATEERE, VERY GOOD, VERY GOOD, VERY POOR
+else if ($text == "3*1*4*4*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 4, 2' ACCOMODATION, GATEERE,VERY GOOD,  VERY GOOD, POOR
+else if ($text == "3*1*4*4*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 4, 3' ACCOMODATION, GATEERE, VERY GOOD,  VERY GOOD, SATISFACTORY
+else if ($text == "3*1*4*4*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 4, 4' ACCOMODATION, GATEERE, VERY GOOD, VERY GOOD, VERY GOOD
+else if ($text == "3*1*4*4*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 4, 5' ACCOMODATION, GATEERE,VERY GOOD,  VERY GOOD, EXCELLENT
+else if ($text == "3*1*4*4*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 5' ACCOMODATION, GATEERE, VERY GOOD, EXCELLENT
+else if ($text == "3*1*4*5"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 5, 1' ACCOMODATION, GATEERE, VERY GOOD, EXCELLENT, VERY POOR
+else if ($text == "3*1*4*5*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 5, 2' ACCOMODATION, GATEERE, VERY GOOD, EXCELLENT, POOR
+else if ($text == "3*1*4*5*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 5, 3' ACCOMODATION, GATEERE, VERY GOOD,  EXCELLENT, SATISFACTORY
+else if ($text == "3*1*4*5*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 4 , 5, 4' ACCOMODATION, GATEERE, VERY GOOD, EXCELLENT, VERY GOOD
+else if ($text == "3*1*4*5*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 4, 5, 5' ACCOMODATION, GATEERE, VERY GOOD, EXCELLENT, EXCELLENT
+else if ($text == "3*1*4*5*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+  //BACK TO THE HOSPITALITY TEAM RATING RESPONSES
+//IN THE CASE WHERE USER TEXT IS '3, 1, 5' ACCOMODATION, GATEERE, EXCELLENT
+else if ($text == "3*1*5"){
+    $response .= "CON On a scale of 1-5, how would you rate the room services? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 1' ACCOMODATION, GATEERE, EXCELLENT, VERY POOR
+else if ($text == "3*1*5*1"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 1, 1' ACCOMODATION, GATEERE, EXCELLENT, VERY POOR, VERY POOR
+else if ($text == "3*1*5*1*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 1, 2' ACCOMODATION, GATEERE, EXCELLENT, VERY POOR, POOR
+else if ($text == "3*1*5*1*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 1, 3' ACCOMODATION, GATEERE, EXCELLENT, VERY POOR, SATISFACTORY
+else if ($text == "3*1*5*1*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 1, 4' ACCOMODATION, GATEERE,EXCELLENT, VERY POOR, VERY GOOD
+else if ($text == "3*1*5*1*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 1, 5' ACCOMODATION, GATEERE, EXCELLENT, VERY POOR, EXCELLENT
+else if ($text == "3*1*5*1*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 2' ACCOMODATION, GATEERE, EXCELLENT, POOR
+else if ($text == "3*1*5*2"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 2, 1' ACCOMODATION, GATEERE, EXCELLENT, POOR, VERY POOR
+else if ($text == "3*1*5*2*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 2, 2' ACCOMODATION, GATEERE, EXCELLENT, POOR, POOR
+else if ($text == "3*1*5*2*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 2, 3' ACCOMODATION, GATEERE, EXCELLENT, POOR, SATISFACTORY
+else if ($text == "3*1*5*2*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 2, 4' ACCOMODATION, GATEERE, EXCELLENT, POOR, VERY GOOD
+else if ($text == "3*1*5*2*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 2, 5' ACCOMODATION, GATEERE, EXCELLENT, POOR, EXCELLENT
+else if ($text == "3*1*5*2*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+  //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 3' ACCOMODATION, GATEERE, EXCELLENT, SATISFACTORY
+else if ($text == "3*1*5*3"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 3, 1' ACCOMODATION, GATEERE,EXCELLENT, SATISFACTORY, VERY POOR
+else if ($text == "3*1*5*3*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 3, 2' ACCOMODATION, GATEERE,EXCELLENT,  SATISFACTORY, POOR
+else if ($text == "3*1*5*3*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 3, 3' ACCOMODATION, GATEERE, EXCELLENT,  SATISFACTORY, SATISFACTORY
+else if ($text == "3*1*5*3*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 3, 4' ACCOMODATION, GATEERE,EXCELLENT, SATISFACTORY, VERY GOOD
+else if ($text == "3*1*5*3*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 3, 5' ACCOMODATION, GATEERE,EXCELLENT,  SATISFACTORY, EXCELLENT
+else if ($text == "3*1*5*3*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+//IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 4' ACCOMODATION, GATEERE, EXCELLENT, VERY GOOD
+else if ($text == "3*1*5*4"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 4, 1' ACCOMODATION, GATEERE, EXCELLENT, VERY GOOD, VERY POOR
+else if ($text == "3*1*5*4*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 4, 2' ACCOMODATION, GATEERE,EXCELLENT,  VERY GOOD, POOR
+else if ($text == "3*1*5*4*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 4, 3' ACCOMODATION, GATEERE, EXCELLENT,  VERY GOOD, SATISFACTORY
+else if ($text == "3*1*5*4*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 4, 4' ACCOMODATION, GATEERE, EXCELLENT, VERY GOOD, VERY GOOD
+else if ($text == "3*1*5*4*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 4, 5' ACCOMODATION, GATEERE,EXCELLENT,  VERY GOOD, EXCELLENT
+else if ($text == "3*1*5*4*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 5' ACCOMODATION, GATEERE, EXCELLENT, EXCELLENT
+else if ($text == "3*1*5*5"){
+    $response .= "CON On a scale of 1-5, how would you rate the accomodation facility? \n";
+    $response .= "1. Very poor \n";
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 5, 1' ACCOMODATION, GATEERE, EXCELLENT, EXCELLENT, VERY POOR
+else if ($text == "3*1*5*5*1"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 5, 2' ACCOMODATION, GATEERE, EXCELLENT, EXCELLENT, POOR
+else if ($text == "3*1*5*5*2"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 5, 3' ACCOMODATION, GATEERE, EXCELLENT,  EXCELLENT, SATISFACTORY
+else if ($text == "3*1*5*5*3"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    } 
+ //IN THE CASE WHERE USER TEXT IS '3, 1, 5 , 5, 4' ACCOMODATION, GATEERE, EXCELLENT, EXCELLENT, VERY GOOD
+else if ($text == "3*1*5*5*4"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }
+   //IN THE CASE WHERE USER TEXT IS '3, 1, 5, 5, 5' ACCOMODATION, GATEERE, EXCELLENT, EXCELLENT, EXCELLENT
+else if ($text == "3*1*5*5*5"){
+    $response .= "END Thank you. Your feedback has been recorded. \n";
+    }  
+ /// END OF ACCODATION FEEDBACK SECTION FOR GATEERE
 
+////BACK TO THE HOSTELS MENU
+//////LOOP FOR ALL ACCOMODATION AREAS 3*2, 3*3, 3*4 and 3*5
+///BEGINNING OF THE OTHER ACCOMDATION AREAS
+//IN THE CASE WHERE USER TEXT IS '3, 2,' ACCOMODATION, MEKATILILI
+/////////MENU FOR ACCOMODATION AREA '2' MEKATILILI 
+//END OF ACCOMODATION FEEDBACK SECTION
+//BEGINNING OF FEEDBACK ON CCONFERENCING
 ///ACCOMODATION
 //BEGINNING OF ACCOMODATION FEEDBACK
- 
 
 // echo response
 header('Content-type: text/plain');
