@@ -2956,8 +2956,58 @@ else if ($text == "3*1*5*5*5"){
 /////////MENU FOR ACCOMODATION AREA '2' MEKATILILI 
 //END OF ACCOMODATION FEEDBACK SECTION
 //BEGINNING OF FEEDBACK ON CCONFERENCING
-///ACCOMODATION
-//BEGINNING OF ACCOMODATION FEEDBACK
+//IN THE CASE WHERE USER TEXT IS '4' CONFERENCING, OUTPUT should be as follows
+if ($text == "4") {
+    $response .= "CON You are about to give feedback on Conferencing \n";
+    $response .= "Have you used any of our conferencing facilities? (Auditorim or Conference Centers) \n";
+    $response .= "1. YES \n";
+    $response .= "2. NO \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '4, 1,' CONFERENCING, YES
+else if ($text == "4*1") {
+    $response .= "CON On a scale of 1-5, how would you rate the facilities \n";
+    $response .= "1. Very poor \n"; 
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '4, 1,1' CONFERENCING, YES, VERY POOR
+else if ($text == "4*1*1") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}  
+//IN THE CASE WHERE USER TEXT IS '4, 1,2' CONFERENCING, YES, POOR
+else if ($text == "4*1*2") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+ //IN THE CASE WHERE USER TEXT IS '4, 1,3' CONFERENCING, YES, SATISFACTORY
+else if ($text == "4*1*3") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+//IN THE CASE WHERE USER TEXT IS '4, 1,4' CONFERENCING, YES, VERY GOOD
+else if ($text == "4*1*4") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+} 
+//IN THE CASE WHERE USER TEXT IS '4, 1,5' CONFERENCING, YES, EXCELLENT
+else if ($text == "4*1*5") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+//BACK TO CONFERENCING MENU
+ //IN THE CASE WHERE USER TEXT IS '4, 2,' CONFERENCING, NO
+else if ($text == "4*2") {
+    $response .= "END Thank you for visiting The Kenya School of Government. \n";
+}  
+//END OF CONFERENCING FEEDBACK
+////BEGINNING OF LIBRARY SERVICES FEEDBACK
+
 
 // echo response
 header('Content-type: text/plain');
