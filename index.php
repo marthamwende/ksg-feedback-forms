@@ -3056,7 +3056,43 @@ else if ($text == "5*1*5") {
     $response .= "END Thank you for visiting The Kenya School of Government. \n";
 }  
 //END OF LIBRARY SERVICES FEEDBACK
+
 ///BEGINNING OF SECURITY FEEDBACK SECTION
+if ($text == "6") {
+    $response .= "CON You are about to give feedback on Security \n";
+    $response .= "On a scale of 1-5, how would you rate the school security and application of the COVID-19 Government guidelines? \n";
+    $response .= "1. Very unsafe \n";
+    $response .= "2. Not safe \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Safe \n";
+    $response .= "5. Very safe \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '6, 1,' SECURITY, VERY UNSAFE
+else if ($text == "6*1") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+//IN THE CASE WHERE USER TEXT IS '6, 2' SECURITY, NOT SAFE
+else if ($text == "6*2") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}  
+//IN THE CASE WHERE USER TEXT IS '6, 3' SECURITY, SATISFACTORY
+else if ($text == "6*3") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+ //IN THE CASE WHERE USER TEXT IS '6, 4' SECURITY, SAFE
+else if ($text == "6*4") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+//IN THE CASE WHERE USER TEXT IS '6, 5' SECURITY, VERY SAFE
+else if ($text == "6*5") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+//END OF SECURITY FEEDBACK SECTION 
+
 
 // echo response
 header('Content-type: text/plain');
