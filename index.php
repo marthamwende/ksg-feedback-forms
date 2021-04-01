@@ -2,9 +2,7 @@
 // Reads the variables sent via POST
 $sessionId = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
-$text = $_POST["text"];
-$endsession = "Thank you for visiting The Kenya School of Government. \n You have successfuly logged out. \n";
-     echo $endsession;       
+$text = $_POST["text"];     
 // THIS IS THE MAIN MENU
 if ($text == "" ) {
     $response .= "CON Hi, Welcome to The Kenya School of Government. \n";
@@ -19,9 +17,6 @@ if ($text == "" ) {
     $response .= " \n";
     $response .= "00. Main Menu \n";
     $response .= "000. End Session \n";
-}
-if ($text == "000") {
-    echo $endsession;
 }
 //IN THE CASE WHERE USER TEXT IS '1' Training, OUTPUT should be as follows
 if ($text == "1"){
