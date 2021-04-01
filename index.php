@@ -3,6 +3,10 @@
 $sessionId = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $text = $_POST["text"];
+if ($text == "000") {
+    $response .= "END Thank you for visiting The Kenya School of Government. \n";
+    $response .= "You have successfully logged out. \n";   
+}
 // THIS IS THE MAIN MENU
 if ($text == "" ) {
     $response .= "CON Hi, Welcome to The Kenya School of Government. \n";
@@ -45,10 +49,6 @@ else if ($text == "00") {
     $response .= " \n";
     $response .= "00. Main Menu \n";
     $response .= "000. End Session \n";
-}
-else if ($text == "000") {
-    $response .= "END Thank you for visiting The Kenya School of Government. \n";
-    $response .= "You have successfully logged out. \n";
 }
 //IN THE CASE WHERE USER TEXT IS '1' Training, OUTPUT should be as follows
 if ($text == "1"){
