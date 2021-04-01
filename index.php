@@ -3007,7 +3007,56 @@ else if ($text == "4*2") {
 }  
 //END OF CONFERENCING FEEDBACK
 ////BEGINNING OF LIBRARY SERVICES FEEDBACK
-
+if ($text == "5") {
+    $response .= "CON You are about to give feedback on Library Services \n";
+    $response .= "Have you visited the school library \n";
+    $response .= "1. YES \n";
+    $response .= "2. NO \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '5, 1,' LIBRARY SERVICES, YES
+else if ($text == "5*1") {
+    $response .= "CON On a scale of 1-5, how would you rate the facility \n";
+    $response .= "1. Very poor \n"; 
+    $response .= "2. Poor \n";
+    $response .= "3. Satisfactory \n";
+    $response .= "4. Very good \n";
+    $response .= "5. Excellent \n";
+    $response .= "0. Back \n";
+    $response .= " \n";
+    $response .= "00. Main Menu \n";
+    $response .= "000. End Session \n";
+}
+//IN THE CASE WHERE USER TEXT IS '5, 1,1' LIBRARY SERVICES, YES, VERY POOR
+else if ($text == "5*1*1") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}  
+//IN THE CASE WHERE USER TEXT IS '5, 1,2' LIBRARY SERVICES, YES, POOR
+else if ($text == "5*1*2") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+ //IN THE CASE WHERE USER TEXT IS '5, 1,3' LIBRARY SERVICES, YES, SATISFACTORY
+else if ($text == "5*1*3") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+//IN THE CASE WHERE USER TEXT IS '5, 1,4' LIBRARY SERVICES, YES, VERY GOOD
+else if ($text == "5*1*4") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+} 
+//IN THE CASE WHERE USER TEXT IS '5, 1,5' LIBRARY SERVICES, YES, EXCELLENT
+else if ($text == "5*1*5") {
+    $response .= "END Thank you. Your feedback has been recorded. \n";    
+}
+//BACK TO LIBRARY SERVICES MENU
+ //IN THE CASE WHERE USER TEXT IS '5, 2,' LIBRARY SERVICES, NO
+ else if ($text == "5*2") {
+    $response .= "END Thank you for visiting The Kenya School of Government. \n";
+}  
+//END OF LIBRARY SERVICES FEEDBACK
+///BEGINNING OF SECURITY FEEDBACK SECTION
 
 // echo response
 header('Content-type: text/plain');
