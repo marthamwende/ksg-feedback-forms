@@ -4,9 +4,6 @@ $sessionId = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $text = $_POST["text"];
 $text = 000;
-do {
-  echo "Thank you for visiting The Kenya School of Government. \n You have successfully logged out. \n";
-} while ($text = 000);
 // THIS IS THE MAIN MENU
 if ($text == "" ) {
     $response .= "CON Hi, Welcome to The Kenya School of Government. \n";
