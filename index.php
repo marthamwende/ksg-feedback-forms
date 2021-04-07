@@ -2996,11 +2996,12 @@ else if ($text == "6*5") {
     $response .= "END Thank you. Your feedback has been recorded. \n";    
 }
 //END OF SECURITY FEEDBACK SECTION 
-if ($text == 000);
+if ($text = "000");
 do {
   $response .= "END Thank you for visiting The Kenya School of Government. \n You have successfully logged out.\n";
 } 
-while ($text = 000);
+while ($text = "0");
+$response .= "END Please go back to the main menu. \n";
 // echo response
 header('Content-type: text/plain');
 echo $response
