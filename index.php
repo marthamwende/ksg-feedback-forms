@@ -18,11 +18,6 @@ if ($text == "" ) {
     $response .= "00. Main Menu \n";
     $response .= "000. End Session \n";
 }
-if ($text == 000);
-do {
-  $response .= "END Thank you for visiting The Kenya School of Government. \n You have successfully logged out.\n";
-} 
-while ($text = 000);
 //IN THE CASE WHERE USER TEXT IS '1' Training, OUTPUT should be as follows
 if ($text == "1"){
     $response .= "CON You are about to give feedback on Training \n";
@@ -3001,8 +2996,11 @@ else if ($text == "6*5") {
     $response .= "END Thank you. Your feedback has been recorded. \n";    
 }
 //END OF SECURITY FEEDBACK SECTION 
-
-
+if ($text == 000);
+do {
+  $response .= "END Thank you for visiting The Kenya School of Government. \n You have successfully logged out.\n";
+} 
+while ($text = 000);
 // echo response
 header('Content-type: text/plain');
 echo $response
