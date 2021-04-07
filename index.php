@@ -59,8 +59,8 @@ else if ($text == "1*1*1") {
     $response .= "3. Satisfactory \n";
     $response .= "4. To some extent \n";
     $response .= "5. Great extent \n";
-    $response .= " \n";
     $response .= "0. Back \n";
+    $response .= " \n";
     $response .= "00. Main Menu \n";
     $response .= "000. End Session \n";
 }
@@ -244,7 +244,6 @@ else if ($text == "1*1*2") {
     $response .= "3. Satisfactory \n";
     $response .= "4. To some extent \n";
     $response .= "5. Great extent \n";
-    $response .= " \n";
     $response .= "0. Back \n";
     $response .= " \n";
     $response .= "00. Main Menu \n";
@@ -429,7 +428,6 @@ else if ($text == "1*1*3") {
     $response .= "3. Satisfactory \n";
     $response .= "4. To some extent \n";
     $response .= "5. Great extent \n";
-    $response .= " \n";
     $response .= "0. Back \n";
     $response .= " \n";
     $response .= "00. Main Menu \n";
@@ -614,7 +612,6 @@ else if ($text == "1*1*4") {
     $response .= "3. Satisfactory \n";
     $response .= "4. To some extent \n";
     $response .= "5. Great extent \n";
-    $response .= " \n";
     $response .= "0. Back \n";
     $response .= " \n";
     $response .= "00. Main Menu \n";
@@ -799,7 +796,6 @@ else if ($text == "1*1*5") {
     $response .= "3. Satisfactory \n";
     $response .= "4. To some extent \n";
     $response .= "5. Great extent \n";
-    $response .= " \n";
     $response .= "0. Back \n";
     $response .= " \n";
     $response .= "00. Main Menu \n";
