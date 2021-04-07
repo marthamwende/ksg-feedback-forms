@@ -3,11 +3,6 @@
 $sessionId = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $text = $_POST["text"];
-if ($text == 000);
-do {
-  $response .= "END Thank you for visiting The Kenya School of Government. \n You have successfully logged out.\n";
-} 
-while ($text = 000);
 // THIS IS THE MAIN MENU
 if ($text == "" ) {
     $response .= "CON Hi, Welcome to The Kenya School of Government. \n";
@@ -23,6 +18,11 @@ if ($text == "" ) {
     $response .= "00. Main Menu \n";
     $response .= "000. End Session \n";
 }
+if ($text == 000);
+do {
+  $response .= "END Thank you for visiting The Kenya School of Government. \n You have successfully logged out.\n";
+} 
+while ($text = 000);
 //IN THE CASE WHERE USER TEXT IS '1' Training, OUTPUT should be as follows
 if ($text == "1"){
     $response .= "CON You are about to give feedback on Training \n";
